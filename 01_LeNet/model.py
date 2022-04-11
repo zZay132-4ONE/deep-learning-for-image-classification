@@ -20,7 +20,7 @@ class LeNet(nn.Module):
         初始化LeNet网络结构。
 
         Conv2d默认参数：
-            (in_channels, out_channels, bias, kernel_size, stride, padding, dilation, groups, bias, padding_mode, device, dtype)
+            (in_channels, out_channels, kernel_size, stride, padding, dilation, groups, bias, padding_mode, device, dtype)
         MaxPool2d默认参数：
             (kernel_size, stride, padding, dilation)
         Linear默认参数：
