@@ -10,7 +10,7 @@ import torch.nn.functional as F
 class LeNet(nn.Module):
     """
     LeNet网络结构：
-        Conv->MaxPool->Conv->MaxPool->FC->FC->FC
+        Conv -> MaxPool -> Conv -> MaxPool -> FC -> FC ->FC
     LeNet输入图像尺寸为：
         3*32*32
     """
