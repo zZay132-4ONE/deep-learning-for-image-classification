@@ -38,9 +38,6 @@ class LeNet(nn.Module):
     def forward(self, x):
         """
         LeNet前馈过程。
-
-        :param x: 输入图像数据
-        :return: 经过网络处理后得到的数据
         """
         x = F.relu(self.conv1(x))       # input(3, 32, 32) output(16, 28, 28)
         x = self.pool1(x)               # output(16, 14, 14)
