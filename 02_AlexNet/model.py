@@ -11,10 +11,12 @@ import torch.utils.data.dataloader
 class AlexNet(nn.Module):
     """
     AlexNet网络结构：
-        Conv -> Conv -> MaxPool -> Conv -> MaxPool -> Conv
-        -> Conv -> Conv -> MaxPool -> FC -> FC -> FC
+        Conv -> Conv -> MaxPool -> Conv -> MaxPool -> Conv -> Conv
+        -> Conv -> MaxPool -> FC(Dropout) -> FC(Dropout) -> FC
     AlexNet输入图像尺寸为：
-        3*224*224
+        3 x 224 x 224
+    AlexNet输出为：
+        1000个类别的概率
     """
 
     def __init__(self, num_classes=1000, init_weights=False):
