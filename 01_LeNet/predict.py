@@ -17,15 +17,16 @@ def main():
          transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]
     )
 
-    classes = ('plane', 'car', 'bird', 'cat',
-               'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+    # 类别
+    classes = ('plane', 'car', 'bird', 'cat', 'deer',
+               'dog', 'frog', 'horse', 'ship', 'truck')
 
     # 建立模型，读取参数权重文件
     net = LeNet()
     net.load_state_dict(torch.load('LeNet.pth'))
 
     # 读取测试图像，转换维度
-    im = Image.open('test_LeNet.jpg')
+    im = Image.open('img/horse.jpg')
     im = transform(im)  # [C, H, W]
     im = torch.unsqueeze(im, dim=0)  # [N, C, H, W]
 
@@ -34,6 +35,7 @@ def main():
         outputs = net(im)
         predict = torch.max(outputs, dim=1)[1].numpy()
     print(classes[int(predict)])
+
 
 if __name__ == '__main__':
     main()
