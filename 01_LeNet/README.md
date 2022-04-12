@@ -4,7 +4,7 @@
 
 - **LeNet网络结构：**
 
-  Conv -> MaxPool -> Conv -> MaxPool -> FC -> FC -> FC
+  Conv5 -> MaxPool -> Conv5 -> MaxPool -> FC-120 -> FC-84 -> FC-10
 
 - **LeNet输入图像尺寸为：** 
 
