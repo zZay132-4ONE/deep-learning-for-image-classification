@@ -6,3 +6,5 @@
 
 - [LeNet（PyTorch）](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/01_LeNet)
 - [AlexNet（PyTorch）](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/02_AlexNet)
+- [VGGNet（PyTorch）](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/03_VGGNet)
+- [GoogLeNet（PyTorch）](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/04_GoogLeNet)
