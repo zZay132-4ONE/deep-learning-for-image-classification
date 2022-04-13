@@ -34,8 +34,8 @@ def main():
     }
 
     # 获取数据集路径
-    data_root = os.path.abspath(os.getcwd())
-    image_path = os.path.join(data_root, "data")
+    data_root = os.path.abspath(os.path.join(os.getcwd(), "../00_dataset"))
+    image_path = os.path.join(data_root, "flower_data")
     assert os.path.exists(image_path), "path {} does not exist.".format(image_path)
 
     # 设置相关参数
