@@ -20,12 +20,12 @@ def main():
     )
 
     # 获取训练数据集（50000张图片）
-    train_set = torchvision.datasets.CIFAR10(root='./data', train=True,
+    train_set = torchvision.datasets.CIFAR10(root='../00_dataset/cifar10', train=True,
                                              download=True, transform=transform)
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=36,
                                                shuffle=True, num_workers=0)
     # 获取测试数据集（10000张图片）
-    test_set = torchvision.datasets.CIFAR10(root='./data', train=False,
+    test_set = torchvision.datasets.CIFAR10(root='../00_dataset/cifar10', train=False,
                                             download=True, transform=transform)
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=10000,
                                               shuffle=False, num_workers=0)
