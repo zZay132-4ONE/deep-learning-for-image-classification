@@ -14,7 +14,7 @@ class AlexNet(nn.Module):
         Conv11 -> Conv5 -> MaxPool
         -> Conv3 -> MaxPool
         -> Conv3 -> Conv3 -> Conv3 -> MaxPool
-        -> FC-2048 -> FC-2048 -> FC-1000
+        -> Dropout(0.5) -> FC-2048 -> Dropout(0.5) -> FC-2048 -> FC-1000
     AlexNet输入图像尺寸为：
         3 x 224 x 224
     AlexNet输出为：
