@@ -4,7 +4,12 @@
 
 - **AlexNet网络结构：**
 
-  Conv11 -> Conv5 -> MaxPool -> Conv3 -> MaxPool -> Conv3 -> Conv3 -> Conv3 -> MaxPool -> Dropout(0.5) -> FC-2048 -> Dropout(0.5) -> FC-2048 -> FC-1000
+  ```shell
+  Conv11 -> Conv5 -> MaxPool 
+  -> Conv3 -> MaxPool 
+  -> Conv3 -> Conv3 -> Conv3 -> MaxPool 
+  -> Dropout(0.5) -> FC-2048 -> Dropout(0.5) -> FC-2048 -> FC-1000
+  ```
 
 - **AlexNet输入图像尺寸为：** 
 
