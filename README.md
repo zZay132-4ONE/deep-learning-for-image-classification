@@ -4,5 +4,5 @@
 >
 > Deep Learning for Image Classification (PyTorch)
 
-- [PyTorch搭建LeNet](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/01_LeNet)
-- [PyTorch搭建AlexNet](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/02_AlexNet)
+- [LeNet（PyTorch）](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/01_LeNet)
+- [AlexNet（PyTorch）](https://github.com/zZay132-4ONE/dl_image_classification/tree/main/02_AlexNet)
