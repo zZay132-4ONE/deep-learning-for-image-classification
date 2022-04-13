@@ -6,12 +6,14 @@
 
 - **VGGNet网络结构（以D配置为例）：**
 
+  ```shell
   Conv3 -> Conv3 -> MaxPool
   -> Conv3 -> Conv3 -> MaxPool
   -> Conv3 -> Conv3 -> Conv3 -> MaxPool
   -> Conv3 -> Conv3 -> Conv3 -> MaxPool
   -> Conv3 -> Conv3 -> Conv3 -> MaxPool
   -> FC-4096 -> Dropout(0.5) -> FC-4096 -> Dropout(0.5) -> FC-1000 -> Softmax
+  ```
 
 - **VGGNet输入图像尺寸为：** 
 
