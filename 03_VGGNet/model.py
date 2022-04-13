@@ -63,7 +63,7 @@ class VGG(nn.Module):
         传入参数：
             features：    网络的特征提取层结构
             num_classes： 分类的类别数量（默认为1000）
-            init_weights：是否已经手动初始化权重（默认为False）。
+            init_weights：是否已经手动初始化权重（默认为False）
         """
         super(VGG, self).__init__()
         # 提取特征
